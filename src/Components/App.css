@@ -4,11 +4,11 @@ html {
 
 body{
   background: linear-gradient(#3EADCF, #ABE9CD) no-repeat ;
+  font-family: 'Cabin', sans-serif; 
 }
 
-.App{
+h1{
   color:white;
-  font-family: 'Cabin', sans-serif; 
 }
 
 .title{
@@ -23,6 +23,11 @@ body{
   position: relative;
   top: 11px;
   left: 3px;
+}
+
+.App {
+  width:60%;
+  margin: auto;
 }
 
 @media (prefers-reduced-motion: no-preference) {
