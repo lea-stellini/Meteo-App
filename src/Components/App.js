@@ -8,9 +8,6 @@ function App() {
 
   const [city, setCity] = useState([
     {ville: 'Rennes', temp: 11, img: 'sun', id:1},
-    {ville: 'Paris', temp: 9, img: 'rain', id:2},
-    {ville: 'Tours', temp: 14, img: 'clouds', id:3}
-
   ])
 
   return (

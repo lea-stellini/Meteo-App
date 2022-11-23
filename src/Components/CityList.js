@@ -3,7 +3,7 @@ import City from "./City";
 
 function CityList(props) {
 
-    return(
+    return (
     <div>
         {
                 props.cities.map((city) => (
