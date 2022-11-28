@@ -11,6 +11,20 @@ h1{
   color:white;
 }
 
+h2{
+  margin: 10px;
+  
+}
+
+h2, h3{
+  color: white;
+}
+
+p{
+  color: grey;
+  font-size: 1rem;
+}
+
 .title{
   text-align: center;
   font-size: 70px;
@@ -30,6 +44,40 @@ h1{
   margin: auto;
 }
 
+.SearchBar{
+  width: 60%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.SearchBar input{
+  width: 100%;
+  height: 50px;
+  background-color: #D5DBDB;
+  border-radius: 25px;
+  border: none;
+  text-align: center;
+}
+
+.SearchBar input:focus {
+  outline: none;
+}
+
+.result{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 60%;
+  height: 200px;
+  margin: 50px auto;
+  text-align: center;
+  font-size: 2rem;
+}
+
+
+
+
 @media (prefers-reduced-motion: no-preference) {
   .sun {
     animation: sun-spin infinite 45s linear;
@@ -42,5 +90,11 @@ h1{
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 800px){
+  .SearchBar{
+      width: 80%;
   }
 }
