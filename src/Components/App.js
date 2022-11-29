@@ -3,11 +3,14 @@ import sun from './sun.png';
 import React, { useState } from "react";
 import axios from "axios";
 
+
 function App() {
   const [data, setData] = useState({});
   const [location, setLocation] = useState('');
 
-  const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&units=metric&APPID=844c13f6bda60d25e077e1ba71204f9e`;
+  const API_KEY = process.env.REACT_APP_API_KEY;
+
+  const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&units=metric&APPID=${API_KEY}`;
 
   const searchLocation = (event) => {
       if(event.key === 'Enter') {
