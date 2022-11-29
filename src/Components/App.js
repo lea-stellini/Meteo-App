@@ -29,7 +29,7 @@ function App() {
         <div className="App">
         <div className="SearchBar">
          <input type="text" 
-                    placeholder="Search for city" 
+                    placeholder="What is the weather like in ..." 
                     value={location}
                     onChange={event => setLocation(event.target.value)} 
                     onKeyPress={searchLocation}
